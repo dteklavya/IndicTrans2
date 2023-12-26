@@ -7,11 +7,10 @@ echo "Setting up the environment in the $root_dir"
 #          create and activate the virtual environment
 # --------------------------------------------------------------
 echo "Creating a virtual environment with python3"
-conda create -n itv2 python=3.9 -y
-conda activate itv2
+python3 -m venv .venv
+source .venv/bin/activate
 
 echo "Installing all the dependencies"
-conda install pip
 python3 -m pip install --upgrade pip
 
 
